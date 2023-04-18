@@ -35,7 +35,7 @@ const Menu = ({ showCarMenu, setShowCarMenu }) => {
                                  return (
                                     <Link
                                        key={item.id}
-                                       href="/"
+                                       href={`/category/${item.name}`}
                                        onClick={() => setShowCarMenu(false)}
                                     >
                                        <li className="h-12 flex items-center justify-between px-3 hover:bg-black/[0.03] rounded-md">
